@@ -31,6 +31,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-configuration-layers
    '(
      (fasd)
+     (imenu-list)
      (spell-checking)
      (syntax-checking)
      (auto-completion :variables
