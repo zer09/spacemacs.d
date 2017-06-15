@@ -356,6 +356,9 @@ before packages are loaded."
         '("~/git/",
           "~/go/src/"
           "~/.spacemacs.d/"))
+
+  (setq-default evil-escape-key-sequence ".p")
+  (setq-default scroll-margin 4)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
