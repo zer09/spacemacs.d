@@ -390,6 +390,10 @@ before packages are loaded."
   (setq-default scroll-margin 4)
 
   (setq powerline-default-separator 'arrow-fade)
+
+  (setq-default desktop-save-mode 1)
+  (setq-default desktop-auto-save-enable)
+  (setq-default desktop-auto-save-set-timer 300)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
