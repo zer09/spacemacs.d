@@ -388,6 +388,8 @@ before packages are loaded."
 
   (setq-default evil-escape-key-sequence ".p")
   (setq-default scroll-margin 4)
+
+  (setq powerline-default-separator 'arrow-fade)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
