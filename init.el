@@ -65,7 +65,10 @@ This function should only modify configuration layer settings."
                                                 "safesql"))
      (html)
      (javascript)
-     (python)
+     (python :variables
+             python-enable-yapf-format-on-save t
+             python-sort-imports-on-save t)
+     (shell-scripts)
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
