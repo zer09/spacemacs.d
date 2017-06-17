@@ -1,0 +1,43 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sat Jun 17 09:54:29 2017
+;; Desktop file format version 208
+;; Emacs version 25.2.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22852 35797 932641 122000) (desktop . "208") "gconsellado@fedora-acer" nil nil ((((font-backend xft x) (font . "-CYRE-Inconsolata-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter . "Inconsolata") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#b2b2b2") (background-color . "#292b2e") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen . fullboth) (display-type . color) (background-mode . dark) (cursor-color . "DarkGoldenrod2") (sticky) (environment) (fullscreen-restore) (eyebrowse-last-slot . 1) (eyebrowse-current-slot . 1) (eyebrowse-window-configs (1 (((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 76) (min-pixel-width . 90) (min-pixel-height-ignore . 57) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 19) (min-pixel-width-safe . 18)) leaf (pixel-width . 1366) (pixel-height . 749) (total-width . 151) (total-height . 39) (normal-height . 1.0) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 22986) (start . 20048))) "")) (powerline-cache) (persp) (persp-buffer-predicate-old . spacemacs/useful-buffer-p) (persp-buffer-predicate-generated . "Unprintable entity") (frameset--id . "1237-6168-47FB-42AE") (frameset--mini t . t) (height . 40) (width . 150) (modeline . t) (minibuffer . t) (unsplittable) (left . 0) (top . 0) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 76) (min-pixel-width . 90) (min-pixel-height-ignore . 57) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 19) (min-pixel-width-safe . 18)) leaf (pixel-width . 1366) (pixel-height . 749) (total-width . 151) (total-height . 39) (normal-height . 1.0) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 22986) (start . 20048))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/home/gconsellado/.spacemacs.d/spacesmacs.old" "/home/gconsellado/.spacemacs.d/desktop" "/home/gconsellado/.spacemacs.d/desktop/" "/home/gconsellado/.spacemacs.d/.git/" "/home/gconsellado/.spacemacs.d/.spacemacs.old" "/home/gconsellado/.zshrc" "/home/gconsellado/go/src/GlobeSys/security/common.go" "/home/gconsellado/.dircolors" "/home/gconsellado/.bashrc" "/home/gconsellado/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" "/home/gconsellado/.zshrc.old.2" "/home/gconsellado/.spacemacs.d/" "/home/gconsellado/.zshrc.old" "/home/gconsellado/git/awesome-terminal-fonts/scripts/fu-metrics" "/home/gconsellado/git/awesome-terminal-fonts/scripts/fu-map" "/home/gconsellado/git/awesome-terminal-fonts/scripts/fu-relocate" "/home/gconsellado/git/awesome-terminal-fonts/build.sh" "/home/gconsellado/git/awesome-terminal-fonts/config/10-symbols.conf" "~/.spacemacs.d/init.el" "~/.emacs.d/.cache/layouts/persp-auto-save" "~/.emacs.d/.cache/.custom-settings" "~/.spacemacs" "~/.emacs.d/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/gconsellado/.spacemacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ivy-mode counsel-mode editorconfig-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode git-gutter+-mode persp-mode purpose-mode vi-tilde-fringe-mode volatile-highlights-mode spacemacs-whitespace-cleanup-mode hl-todo-mode flyspell-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode elisp-slime-nav-mode auto-compile-mode company-mode)
+  22986
+  '(22986 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring (18530 19577 19577 19577))))
+
+(desktop-create-buffer 208
+  "/home/gconsellado/.spacemacs.d/spacesmacs.old"
+  "spacesmacs.old"
+  'emacs-lisp-mode
+  '(eldoc-mode page-break-lines-mode global-auto-revert-mode undo-tree-mode override-global-mode which-key-mode ivy-mode counsel-mode editorconfig-mode anzu-mode evil-escape-mode smartparens-mode flx-ido-mode git-gutter+-mode persp-mode purpose-mode vi-tilde-fringe-mode volatile-highlights-mode spacemacs-whitespace-cleanup-mode hl-todo-mode flyspell-mode yas-minor-mode rainbow-delimiters-mode hs-minor-mode highlight-parentheses-mode highlight-numbers-mode auto-highlight-symbol-mode bug-reference-prog-mode goto-address-prog-mode elisp-slime-nav-mode auto-compile-mode company-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (indicate-empty-lines . t) (tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . utf-8-dos) (overwrite-mode))
+  '((mark-ring (1))))
+
