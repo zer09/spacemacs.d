@@ -53,8 +53,7 @@ This function should only modify configuration layer settings."
                       version-control-diff-side 'left)
      (systemd)
      (shell :variables
-            shell-default-term-shell "/bin/bash"
-            shell-default-shell 'multi-term)
+            shell-default-shell 'eshell)
      (protobuf)
      (go :variables
          go-use-gometalinter t
