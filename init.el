@@ -53,7 +53,8 @@ This function should only modify configuration layer settings."
                       version-control-diff-side 'left)
      (systemd)
      (shell :variables
-            shell-default-shell 'eshell)
+            shell-default-shell 'eshell
+            shell-enable-smart-eshell t)
      (protobuf)
      (go :variables
          go-use-gometalinter t
