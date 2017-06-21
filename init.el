@@ -386,6 +386,7 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (global-git-commit-mode t)
+  (global-evil-mc-mode t)
   (setq magit-repository-directories
         '("~/git/",
           "~/go/src/"
