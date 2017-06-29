@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
    '(
      (fasd)
      (imenu-list)
-     (spell-checking)
+     (spell-checking :variables
+                     spell-checking-enable-by-default nil)
      (syntax-checking)
      (auto-completion :variables
                       auto-completion-return-key-behavior 'complete
