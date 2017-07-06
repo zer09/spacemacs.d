@@ -62,6 +62,7 @@ This function should only modify configuration layer settings."
          go-use-gometalinter t
          gofmt-command "goimports"
          go-tab-width 4
+         flycheck-gometalinter-fast t
          flycheck-gometalinter-deadline "30s"
          flycheck-gometalinter-enable-linters '("testify"
                                                 "safesql"))
