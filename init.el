@@ -396,7 +396,7 @@ before packages are loaded."
           "~/go/src/"
           "~/.spacemacs.d/"))
 
-  (setq-default evil-escape-key-sequence ".p")
+  (setq-default evil-escape-key-sequence ",.")
   (setq-default scroll-margin 4)
 
   (setq powerline-default-separator 'arrow-fade)
