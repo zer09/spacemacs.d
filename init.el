@@ -67,7 +67,8 @@ This function should only modify configuration layer settings."
          flycheck-gometalinter-enable-linters '("testify"
                                                 "safesql"))
      (html)
-     (javascript)
+     (javascript :variables
+                 javascript-disable-tern-port-files nil)
      (python :variables
              python-enable-yapf-format-on-save t
              python-sort-imports-on-save t)
