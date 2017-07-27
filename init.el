@@ -382,8 +382,8 @@ configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq git-magit-status-fullscreen t)
-  (setq doom-vibrant-brighter-modeline t)
-  (setq doom-vibrant-brighter-comments t)
+  (setq doom-molokai-brighter-modeline t)
+  (setq doom-molokai-brighter-comments t)
 
   (setq theming-modifications
         '((doom-molokai
