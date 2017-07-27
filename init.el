@@ -46,8 +46,9 @@ This function should only modify configuration layer settings."
              ranger-enter-with-minus t
              ranger-show-hidden t
              ranger-max-preview-size 1)
-     (colors :variables
-             colors-enable-nyan-cat-progress-bar (display-graphic-p))
+     (colors)
+     ;; (colors :variables
+     ;;         colors-enable-nyan-cat-progress-bar (display-graphic-p))
      (keyboard-layout :variables
                       kl-layout 'dvorak)
      (git)
