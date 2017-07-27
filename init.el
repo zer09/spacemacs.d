@@ -49,6 +49,7 @@ This function should only modify configuration layer settings."
      (colors)
      ;; (colors :variables
      ;;         colors-enable-nyan-cat-progress-bar (display-graphic-p))
+     (theming)
      (keyboard-layout :variables
                       kl-layout 'dvorak)
      (git)
@@ -383,6 +384,12 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq git-magit-status-fullscreen t)
   (setq doom-vibrant-brighter-modeline t)
   (setq doom-vibrant-brighter-comments t)
+
+  (setq theming-modifications
+        '((doom-molokai
+           (powerline-active1 :foreground "#e9e2cb" :background "#2075c7" :inverse-video nil)
+           (powerline-active2 :foreground "#e9e2cb" :background "#2075c7" :inverse-video nil)
+           )))
   )
 
 (defun dotspacemacs/user-config ()
