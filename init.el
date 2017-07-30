@@ -387,8 +387,11 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 
   (setq theming-modifications
         '((doom-molokai
-           (powerline-active1 :foreground "#e9e2cb" :background "#2075c7" :inverse-video nil)
-           (powerline-active2 :foreground "#e9e2cb" :background "#2075c7" :inverse-video nil)
+           (powerline-active1 :foreground "#E9E2CB" :background "#2075C7")
+           (powerline-active2 :foreground "#E9E2CB" :background "#2075C7")
+           (powerline-inactive1 :foreground "#9370DB" :background "#222323")
+           (powerline-inactive2 :foreground "#9370DB" :background "#222323")
+           (git-gutter+-modified :foreground "#FFFF00")
            )))
   )
 
