@@ -392,6 +392,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
            (powerline-inactive1 :foreground "#9370DB" :background "#222323")
            (powerline-inactive2 :foreground "#9370DB" :background "#222323")
            (git-gutter+-modified :foreground "#FFFF00")
+           (sp-show-pair-match-face :background "#4E5400")
            )))
   )
 
