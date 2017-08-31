@@ -421,7 +421,7 @@ before packages are loaded."
 
   (setq powerline-default-separator 'arrow-fade)
 
-  (setq-default desktop-save-mode 1)
+  ;; (setq-default desktop-save-mode 1) // disable for now I dont have use for it.
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
