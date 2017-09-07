@@ -398,7 +398,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
            (sp-show-pair-match-face :background "#4E5400"))
           (gruvbox
            (git-gutter+-modified :foreground "#FFFF00")
-           (sp-show-pair-match-face :background "#4E5400"))
+           (sp-show-pair-match-face :background "#4E5400")
+           (font-lock-comment-face :foreground "#A9A9A9"))
           )
         )
   )
