@@ -47,7 +47,8 @@ This function should only modify configuration layer settings."
              ranger-show-hidden t
              ranger-max-preview-size 1)
      (colors)
-     (c-c++)
+     (c-c++ :variables
+            c-c++-enable-clang-support t)
      ;; (colors :variables
      ;;         colors-enable-nyan-cat-progress-bar (display-graphic-p))
      (theming)
