@@ -401,6 +401,7 @@ configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq git-magit-status-fullscreen t)
+  (setq js2-include-node-externs t)
   (setq doom-molokai-brighter-modeline t)
   (setq doom-molokai-brighter-comments t)
 
@@ -436,6 +437,8 @@ before packages are loaded."
 
   (setq-default evil-escape-key-sequence ",.")
   (setq-default scroll-margin 4)
+  (setq-default js2-basic-offset 2)
+  (setq-default js-indent-level 2)
 
   (setq powerline-default-separator 'arrow-fade)
 
