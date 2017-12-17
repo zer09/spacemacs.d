@@ -437,8 +437,6 @@ before packages are loaded."
 
   (setq-default evil-escape-key-sequence ",.")
   (setq-default scroll-margin 4)
-  (setq-default js2-basic-offset 2)
-  (setq-default js-indent-level 2)
 
   (setq powerline-default-separator 'arrow-fade)
 
