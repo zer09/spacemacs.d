@@ -41,6 +41,7 @@ This function should only modify configuration layer settings."
                       auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t)
+     (ycmd)
      (rebox :variables
             rebox-enable-in-text-mode t)
      (ranger :variables
@@ -405,6 +406,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq js2-include-node-externs t)
   (setq doom-molokai-brighter-modeline t)
   (setq doom-molokai-brighter-comments t)
+  (setq ycmd-server-command (list "python" (file-truename "~/git/ycmd/ycmd")))
+  (setq ycmd-force-semantic-completion t)
 
   (setq theming-modifications
         '(
