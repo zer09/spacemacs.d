@@ -37,7 +37,8 @@ This function should only modify configuration layer settings."
      (syntax-checking)
      (auto-completion :variables
                       auto-completion-return-key-behavior 'complete
-                      auto-completion-tab-key-behavior nil
+                      auto-completion-tab-key-behavior 'cycle
+                      auto-completion-enable-snippets-in-popup t
                       auto-completion-enable-help-tooltip t
                       auto-completion-enable-sort-by-usage t)
      (rebox :variables
