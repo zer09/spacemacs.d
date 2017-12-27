@@ -404,6 +404,8 @@ It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq git-magit-status-fullscreen t)
   (setq js2-include-node-externs t)
+  (setq js2-mode-show-parse-errors nil)
+  (setq js2-mode-show-strict-warnings nil)
   (setq doom-molokai-brighter-modeline t)
   (setq doom-molokai-brighter-comments t)
   (setq ycmd-server-command (list "python" (file-truename "~/git/ycmd/ycmd")))
