@@ -93,6 +93,7 @@ This function should only modify configuration layer settings."
           ivy-extra-directories nil)
      ;; auto-completion
      ;; better-defaults
+     semantic
      emacs-lisp
      ;; git
      markdown
@@ -451,6 +452,7 @@ before packages are loaded."
 
   (setq powerline-default-separator 'arrow-fade)
 
+  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)
   ;; (setq-default desktop-save-mode 1) // disable for now I dont have use for it.
   )
 
