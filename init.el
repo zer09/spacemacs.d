@@ -405,14 +405,16 @@ configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq git-magit-status-fullscreen t)
+
   (setq js2-include-node-externs t)
   (setq js2-mode-show-parse-errors nil)
   (setq js2-mode-show-strict-warnings nil)
-  (setq doom-molokai-brighter-modeline t)
-  (setq doom-molokai-brighter-comments t)
+  (setq web-mode-markup-indent-offset 2)
   (setq ycmd-server-command (list "python" (file-truename "~/git/ycmd/ycmd")))
   (setq ycmd-force-semantic-completion t)
 
+  (setq doom-molokai-brighter-modeline t)
+  (setq doom-molokai-brighter-comments t)
   (setq theming-modifications
         '(
           (doom-molokai
@@ -438,6 +440,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
+
   (setq magit-repository-directories
         '("~/git/",
           "~/go/src/"
