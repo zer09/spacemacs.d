@@ -90,7 +90,8 @@ This function should only modify configuration layer settings."
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      (ivy :variables
-          ivy-extra-directories nil)
+          ivy-extra-directories nil
+          ivy-enable-advanced-buffer-information t)
      ;; auto-completion
      ;; better-defaults
      semantic
