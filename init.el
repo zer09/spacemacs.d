@@ -201,7 +201,7 @@ It should only modify the values of Spacemacs settings."
    ;; are spaceline themes. `vanilla' is default Emacs mode-line. `custom' is a
    ;; user defined themes, refer to the DOCUMENTATION.org for more info on how
    ;; to create your own spaceline theme.. (default 'spacemacs)
-   dotspacemacs-mode-line-theme 'spacemacs
+   dotspacemacs-mode-line-theme 'all-the-icons
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
    dotspacemacs-colorize-cursor-according-to-state t
@@ -457,6 +457,7 @@ before packages are loaded."
   (setq-default evil-escape-key-sequence ",.")
   (setq-default scroll-margin 4)
 
+  (setq-default spaceline-all-the-icons-separator-type 'arrow)
   (setq powerline-default-separator 'arrow-fade)
 
   (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)
