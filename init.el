@@ -437,6 +437,9 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
            (git-gutter+-modified :foreground "#FFFF00")
            (sp-show-pair-match-face :background "#4E5400")
            (font-lock-comment-face :foreground "#A9A9A9"))
+          (sanityinc-tomorrow-bright
+           (mode-line :height 100)
+           (mode-line-inactive :height 90))
           )
         )
   )
