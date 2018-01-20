@@ -532,6 +532,10 @@ before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
 
+  (spaceline-all-the-icons--setup-anzu)
+  (setq anzu-cons-mode-line-p t)
+  (global-anzu-mode +1)
+
   (setq magit-repository-directories
         '("~/git/",
           "~/go/src/"
