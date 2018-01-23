@@ -542,12 +542,12 @@ before packages are loaded."
           "~/.spacemacs.d/"))
 
   (setq-default evil-escape-key-sequence ",.")
-  (setq-default scroll-margin 4)
+  ;; (setq-default scroll-margin 4)
 
-  (setq-default spaceline-all-the-icons-separator-type 'arrow)
-  (setq powerline-default-separator 'arrow-fade)
+  ;; (setq-default spaceline-all-the-icons-separator-type 'arrow)
+  ;; (setq powerline-default-separator 'arrow-fade)
 
-  (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)
+  ;; (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)
   ;; (setq-default desktop-save-mode 1) // disable for now I dont have use for it.
   )
 
