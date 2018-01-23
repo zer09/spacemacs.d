@@ -516,6 +516,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
            (sp-show-pair-match-face :background "#4E5400")
            (font-lock-comment-face :foreground "#A9A9A9"))
           (sanityinc-tomorrow-bright
+           ;; (mode-line :height 110)
+           ;; (mode-line-inactive :height 100))
            (spacemacs-insert-face :foreground "#000000" :background "chartreuse3")
            (spacemacs-motion-face :foreground "#000000" :background "plum3")
            (spacemacs-normal-face :foreground "#000000" :background "DarkGoldenRod2"))
