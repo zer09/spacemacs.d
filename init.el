@@ -535,6 +535,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
+  (global-prettify-symbols-mode +1)
 
   (spaceline-all-the-icons--setup-anzu)
   (global-anzu-mode +1)
@@ -553,6 +554,10 @@ before packages are loaded."
 
   ;; (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)
   ;; (setq-default desktop-save-mode 1) // disable for now I dont have use for it.
+
+  ;; (add-hook 'react-mode-hook
+  ;;           (lambda ()
+  ;;             (push '("=>" . ?⇒) prettify-symbols-alist)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
