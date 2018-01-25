@@ -537,6 +537,8 @@ before packages are loaded."
   (global-evil-mc-mode t)
   (global-prettify-symbols-mode +1)
 
+  (setq-default evil-escape-key-sequence ",.")
+
   (spaceline-all-the-icons--setup-anzu)
   (global-anzu-mode +1)
   (setq anzu-cons-mode-line-p t)
@@ -546,7 +548,6 @@ before packages are loaded."
           "~/go/src/"
           "~/.spacemacs.d/"))
 
-  (setq-default evil-escape-key-sequence ",.")
   ;; (setq-default scroll-margin 4)
 
   ;; (setq-default spaceline-all-the-icons-separator-type 'arrow)
