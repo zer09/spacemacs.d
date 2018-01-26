@@ -549,6 +549,14 @@ before packages are loaded."
           "~/go/src/"
           "~/.spacemacs.d/"))
 
+  ;; (with-eval-after-load 'projectile
+  ;;   (setq projectile-globally-ignored-directories
+  ;;         (append projectile-globally-ignored-directories
+  ;;                 '(".get"
+  ;;                   "node_modules"))))
+  (setq projectile-globally-ignored-directories
+        '(".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox"
+          ".svn" "build" "vendor" "cms/ext" "cms/Sencha" "node_modules"))
   ;; (setq-default scroll-margin 4)
 
   ;; (setq-default spaceline-all-the-icons-separator-type 'arrow)
