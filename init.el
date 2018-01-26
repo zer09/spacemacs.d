@@ -109,6 +109,7 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      ;; syntax-checking
      ;; version-control
+     (spacemacs-layouts :variables layouts-enable-autosave t)
      )
 
    ;; List of additional packages that will be installed without being
