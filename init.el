@@ -536,7 +536,6 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
-  (global-prettify-symbols-mode +1)
 
   (setq-default evil-escape-key-sequence ",.")
 
@@ -565,9 +564,39 @@ before packages are loaded."
   ;; (spacemacs/toggle-evil-safe-lisp-structural-editing-on-register-hooks)
   ;; (setq-default desktop-save-mode 1) // disable for now I dont have use for it.
 
-  ;; (add-hook 'react-mode-hook
-  ;;           (lambda ()
-  ;;             (push '("=>" . ?⇒) prettify-symbols-alist)))
+  (defun my/symbols-setup () 
+    (interactive)
+    (mapc (lambda (pair) (push pair prettify-symbols-alist))
+          '(
+            ("==" . ?⩵)
+            ("===" . ?⩶)
+            ("!==" . ?≠)
+            ("<=" . ?≤)
+            (">=" . ?≥)
+            ("=>" . ?⇒)
+            ("->" . ?→)
+            ("<-" . ?←)
+            ("function" . ?ƒ)
+            ("null" . ?∅)
+            ("undefined" . ?⊥)
+            ("bool" . ?𝔹)
+            ("true" . ?𝕋)
+            ("false" . ?𝔽)
+            ("int" . ?ℤ)
+            ("float" . ?ℝ)
+            ("double" . ?𝔻)
+            ("string" . ?𝕊)
+            ("in" . ?∈)
+            ("&&" . ?∧)
+            ("||" . ?∨)
+            ("for" . ?∀)
+            ("return" . ?⟼)
+            ("yield" . ?⟻)
+            ("++" . ?⧺)
+            )))
+
+  (global-prettify-symbols-mode +1)
+  (add-hook 'prog-mode-hook #'my/symbols-setup)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
