@@ -594,6 +594,7 @@ before packages are loaded."
             ("return" . ?⟼)
             ("yield" . ?⟻)
             ("++" . ?⧺)
+            ("electron" . ?)
             )))
 
   (global-prettify-symbols-mode +1)
