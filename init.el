@@ -597,7 +597,8 @@ before packages are loaded."
             ("++" . ?⧺)
             ("electron" . ?)
             ("event" . ?)
-            ("msg" . ?)
+            ("msg" . ?)
+            ("data" . ?)
             )))
 
   (global-prettify-symbols-mode +1)
