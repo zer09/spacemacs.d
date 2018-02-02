@@ -602,7 +602,7 @@ before packages are loaded."
             )))
 
   (global-prettify-symbols-mode +1)
-  (add-hook 'prog-mode-hook #'my/symbols-setup)
+  (add-hook 'js2-mode-hook #'my/symbols-setup)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
