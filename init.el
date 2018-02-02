@@ -98,7 +98,7 @@ This function should only modify configuration layer settings."
           ivy-enable-advanced-buffer-information t)
      ;; auto-completion
      ;; better-defaults
-     semantic
+     ;; semantic
      emacs-lisp
      ;; git
      markdown
