@@ -70,6 +70,7 @@ This function should only modify configuration layer settings."
             shell-default-shell 'eshell)
      (protobuf)
      (go :variables
+         godoc-at-point-function 'godoc-gogetdoc
          go-use-gometalinter t
          gofmt-command "goimports"
          go-tab-width 4
