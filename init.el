@@ -78,6 +78,7 @@ This function should only modify configuration layer settings."
          flycheck-gometalinter-deadline "30s"
          flycheck-gometalinter-enable-linters '("testify"
                                                 "safesql"))
+     (rust)
      (html)
      (javascript :variables
                  javascript-disable-tern-port-files nil)
