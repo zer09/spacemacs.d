@@ -614,6 +614,9 @@ before packages are loaded."
 
   (global-prettify-symbols-mode +1)
   (add-hook 'js2-mode-hook #'my/symbols-setup)
+
+  ;; (evil-define-key '(normal motion) global-map "gs" (lambda () (interactive) (avy-goto-char-timer) (my-xref/find-definitions)))
+  (evil-define-key '(normal motion) global-map "gs" 'avy-goto-char-timer)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
