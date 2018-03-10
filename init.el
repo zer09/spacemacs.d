@@ -77,7 +77,8 @@ This function should only modify configuration layer settings."
          flycheck-gometalinter-fast t
          flycheck-gometalinter-deadline "30s"
          flycheck-gometalinter-enable-linters '("testify"
-                                                "safesql"))
+                                                "safesql")
+         go-tag-args (list "-transform" "camelcase"))
      (rust)
      (html)
      (javascript :variables
