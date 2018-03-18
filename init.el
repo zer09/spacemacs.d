@@ -612,8 +612,14 @@ before packages are loaded."
             ("data" . ?)
             )))
 
+  (defun my/go-compile ()
+    (if (not(string-match "go" compile-command))
+        (set (make-local-variable 'compile-command)
+             "go build -v && go test -v &&  go vet")))
+
   (global-prettify-symbols-mode +1)
   (add-hook 'js2-mode-hook #'my/symbols-setup)
+  (add-hook 'go-mode-hook #'my/go-compile)
 
   ;; (evil-define-key '(normal motion) global-map "gs" (lambda () (interactive) (avy-goto-char-timer) (my-xref/find-definitions)))
   (evil-define-key '(normal motion) global-map "gs" 'avy-goto-char-timer)
