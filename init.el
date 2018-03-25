@@ -132,7 +132,11 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages
+   '(
+     smartparens
+     evil-lisp-state
+     )
 
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
@@ -551,6 +555,7 @@ before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
   (blink-cursor-mode t)
+  (electric-pair-mode 1)
 
   (setq-default evil-escape-key-sequence ",.")
 
