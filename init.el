@@ -550,6 +550,7 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
+  (blink-cursor-mode t)
 
   (setq-default evil-escape-key-sequence ",.")
 
