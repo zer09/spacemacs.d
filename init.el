@@ -607,7 +607,7 @@ before packages are loaded."
             ("return" . ?⟼)
             ("yield" . ?⟻)
             ("++" . ?⧺)
-            ("electron" . ?)
+            ("eletron", (?\uE62E))
             ("event" . ?)
             ("msg" . ?)
             ("data" . ?)
