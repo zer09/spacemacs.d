@@ -40,6 +40,7 @@ This function should only modify configuration layer settings."
                      spell-checking-enable-by-default nil)
      (syntax-checking)
      (auto-completion :variables
+                      ac-flyspell-workaround t
                       auto-completion-return-key-behavior 'complete
                       auto-completion-tab-key-behavior 'cycle
                       auto-completion-enable-snippets-in-popup t
