@@ -248,7 +248,7 @@ It should only modify the values of Spacemacs settings."
    ;; to create your own spaceline theme. Value can be a symbol or list with\
    ;; additional properties.
    ;; (default '(spacemacs :separator wave :separator-scale 1.5))
-   dotspacemacs-mode-line-theme '(spacemacs :separator wave :separator-scale 1.5)
+   dotspacemacs-mode-line-theme '(all-the-icons :separator none :separator-scale 1.5)
 
    ;; If non-nil the cursor color matches the state color in GUI Emacs.
    ;; (default t)
@@ -559,9 +559,9 @@ before packages are loaded."
 
   (setq-default evil-escape-key-sequence ",.")
 
-  ;; (spaceline-all-the-icons--setup-anzu)
-  ;; (global-anzu-mode +1)
-  ;; (setq anzu-cons-mode-line-p t)
+  (spaceline-all-the-icons--setup-anzu)
+  (global-anzu-mode +1)
+  (setq anzu-cons-mode-line-p t)
 
   (setq magit-repository-directories
         '("~/git/",
