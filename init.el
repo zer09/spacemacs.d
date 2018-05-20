@@ -134,8 +134,8 @@ This function should only modify configuration layer settings."
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages
    '(
-     smartparens
-     evil-lisp-state
+     ;; smartparens
+     ;; evil-lisp-state
      )
 
    ;; Defines the behaviour of Spacemacs when installing packages.
@@ -555,7 +555,7 @@ before packages are loaded."
   (global-git-commit-mode t)
   (global-evil-mc-mode t)
   (blink-cursor-mode t)
-  (electric-pair-mode 1)
+  ;; (electric-pair-mode 1)
 
   (setq-default evil-escape-key-sequence ",.")
 
@@ -630,6 +630,7 @@ before packages are loaded."
 
   ;; (evil-define-key '(normal motion) global-map "gs" (lambda () (interactive) (avy-goto-char-timer) (my-xref/find-definitions)))
   (evil-define-key '(normal motion) global-map "gs" 'avy-goto-char-timer)
+  (defun spacemacs/title-prepare (TITLE-FORMAT))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
