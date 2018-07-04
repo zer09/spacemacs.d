@@ -84,9 +84,9 @@ This function should only modify configuration layer settings."
      (html)
      (javascript :variables
                  javascript-disable-tern-port-files nil)
-     ;; (python :variables
-     ;;         python-enable-yapf-format-on-save t
-     ;;         python-sort-imports-on-save t)
+     (python :variables
+             python-enable-yapf-format-on-save t
+             python-sort-imports-on-save t)
      (shell-scripts)
      (sql :variables
                sql-capitalize-keywords t)
@@ -129,7 +129,7 @@ This function should only modify configuration layer settings."
      )
 
    ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '(anaconda-mode)
+   dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages
