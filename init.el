@@ -81,9 +81,16 @@ This function should only modify configuration layer settings."
                                                 "safesql")
          go-tag-args (list "-transform" "camelcase"))
      (rust)
-     (html)
+     (html :variables
+           web-fmt-tool 'prettier)
      (javascript :variables
                  javascript-disable-tern-port-files nil)
+                 ;; javascript-fmt-tool 'prettier)
+     ;; (json :variables
+     ;;       json-fmt-tool 'prettier)
+     (json)
+     (typescript :variables
+                 typescript-fmt-tool 'typescript-formatter)
      (python :variables
              python-enable-yapf-format-on-save t
              python-sort-imports-on-save t)
@@ -129,7 +136,10 @@ This function should only modify configuration layer settings."
      )
 
    ;; A list of packages that cannot be updated.
-   dotspacemacs-frozen-packages '()
+   dotspacemacs-frozen-packages
+   '(
+     ;; projectile
+     )
 
    ;; A list of packages that will not be installed and loaded.
    dotspacemacs-excluded-packages
@@ -568,6 +578,7 @@ before packages are loaded."
   (global-evil-mc-mode t)
   (blink-cursor-mode t)
   ;; (electric-pair-mode 1)
+  ;; (indent-guide-global-mode t)
 
   (setq-default evil-escape-key-sequence ",.")
 
@@ -639,6 +650,7 @@ before packages are loaded."
   (global-prettify-symbols-mode +1)
   (add-hook 'js2-mode-hook #'my/symbols-setup)
   (add-hook 'go-mode-hook #'my/go-compile)
+  ;; (add-hook 'web-mode-hook #'indent-guide-mode)
 
   ;; (evil-define-key '(normal motion) global-map "gs" (lambda () (interactive) (avy-goto-char-timer) (my-xref/find-definitions)))
   (evil-define-key '(normal motion) global-map "gs" 'avy-goto-char-timer)
