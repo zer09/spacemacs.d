@@ -579,6 +579,7 @@ before packages are loaded."
   (blink-cursor-mode t)
   ;; (electric-pair-mode 1)
   ;; (indent-guide-global-mode t)
+  (global-column-enforce-mode t)
 
   (setq-default evil-escape-key-sequence ",.")
 
@@ -647,10 +648,15 @@ before packages are loaded."
         (set (make-local-variable 'compile-command)
              "go build -v && go test -v &&  go vet")))
 
+  (defun my/column-enforce-mode ()
+    "Disable `column-enforce-mode' in certain modes."
+    (column-enforce-mode -1))
+
   (global-prettify-symbols-mode +1)
   (add-hook 'js2-mode-hook #'my/symbols-setup)
   (add-hook 'go-mode-hook #'my/go-compile)
   ;; (add-hook 'web-mode-hook #'indent-guide-mode)
+  (add-hook 'web-mode-hook #'my/column-enforce-mode)
 
   ;; (evil-define-key '(normal motion) global-map "gs" (lambda () (interactive) (avy-goto-char-timer) (my-xref/find-definitions)))
   (evil-define-key '(normal motion) global-map "gs" 'avy-goto-char-timer)
