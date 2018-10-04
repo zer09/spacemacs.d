@@ -70,14 +70,12 @@ This function should only modify configuration layer settings."
             shell-default-shell 'eshell)
      (protobuf)
      (go :variables
-         godoc-at-point-function 'godoc-gogetdoc
-         go-use-gometalinter t
+         go-use-golangci-lint t
+         go-backend 'lsp
+         go-format-before-save t
          gofmt-command "goimports"
          go-tab-width 4
-         flycheck-gometalinter-fast t
-         flycheck-gometalinter-deadline "30s"
-         flycheck-gometalinter-enable-linters '("testify"
-                                                "safesql")
+         godoc-at-point-function 'godoc-gogetdoc
          go-tag-args (list "-transform" "camelcase"))
      (rust)
      (html :variables
