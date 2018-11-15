@@ -78,10 +78,13 @@ This function should only modify configuration layer settings."
          godoc-at-point-function 'godoc-gogetdoc
          go-tag-args (list "-transform" "camelcase"))
      (rust)
+     (tern :variables
+           tern-disable-port-files nil)
      (html :variables
            web-fmt-tool 'prettier)
      (javascript :variables
-                 javascript-disable-tern-port-files nil)
+                 javascript-backend 'tern)
+                 ;; javascript-disable-tern-port-files nil)
                  ;; javascript-fmt-tool 'prettier)
      ;; (json :variables
      ;;       json-fmt-tool 'prettier)
