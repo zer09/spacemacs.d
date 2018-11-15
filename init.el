@@ -531,6 +531,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq js2-mode-show-parse-errors nil)
   (setq js2-mode-show-strict-warnings nil)
   (setq web-mode-markup-indent-offset 2)
+  (setq typescript-indent-level 2)
   (setq ycmd-server-command (list "python" (file-truename "~/git/ycmd/ycmd")))
   (setq ycmd-force-semantic-completion t)
 
