@@ -38,7 +38,9 @@ This function should only modify configuration layer settings."
      (imenu-list)
      (spell-checking :variables
                      spell-checking-enable-by-default nil)
-     (syntax-checking)
+     ;; (syntax-checking)
+     (syntax-checking :variables
+                      syntax-checking-enable-by-default nil)
      (auto-completion :variables
                       ac-flyspell-workaround t
                       auto-completion-return-key-behavior 'complete
@@ -69,9 +71,13 @@ This function should only modify configuration layer settings."
      (shell :variables
             shell-default-shell 'eshell)
      (protobuf)
+     (lsp :variables
+          lsp-ui-doc-enable nil
+          lsp-ui-sideline-enable nil)
      (go :variables
          go-use-golangci-lint t
-         go-backend 'lsp
+         ;; go-backend 'lsp
+         go-backend 'go-mode
          go-format-before-save t
          gofmt-command "goimports"
          go-tab-width 4
@@ -86,9 +92,9 @@ This function should only modify configuration layer settings."
                  javascript-backend 'tern)
                  ;; javascript-disable-tern-port-files nil)
                  ;; javascript-fmt-tool 'prettier)
-     ;; (json :variables
-     ;;       json-fmt-tool 'prettier)
-     (json)
+     (json :variables
+           json-fmt-tool 'prettier)
+     ;; (json)
      (typescript :variables
                  typescript-fmt-tool 'typescript-formatter)
      (python :variables
@@ -140,6 +146,7 @@ This function should only modify configuration layer settings."
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages
    '(
+     spaceline
      ;; projectile
      )
 
@@ -264,7 +271,11 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(sanityinc-tomorrow-bright
+   dotspacemacs-themes '(spacemacs-dark
+                         doom-solarized-light
+                         doom-nord-light
+                         doom-peacock
+                         sanityinc-tomorrow-bright
                          sanityinc-tomorrow-day
                          sunny-day
                          gruvbox
@@ -287,8 +298,12 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Inconsolata Nerd Font"
-                               :size 16
+   ;; dotspacemacs-default-font '("Inconsolata Nerd Font"
+   ;;                             :size 16
+   ;;                             :weight normal
+   ;;                             :width normal)
+   dotspacemacs-default-font '("Source Code Pro"
+                               :size 13
                                :weight normal
                                :width normal)
 
@@ -523,6 +538,11 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+  (add-to-list 'configuration-layer-elpa-archives '("melpa-stable" . "stable.melpa.org/packages/"))
+  (add-to-list 'package-pinned-packages '(spaceline . "melpa-stable"))
+  (add-to-list 'package-pinned-packages '(spaceline-all-the-icons . "melpa-stable"))
+  (add-to-list 'package-pinned-packages '(all-the-icons . "melpa-stable"))
+
   (setq custom-file (concat (file-name-directory dotspacemacs-filepath) "customize.el"))
 
   (setq git-magit-status-fullscreen t)
@@ -530,6 +550,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq js2-include-node-externs t)
   (setq js2-mode-show-parse-errors nil)
   (setq js2-mode-show-strict-warnings nil)
+  (setq js-indent-level 2)
   (setq web-mode-markup-indent-offset 2)
   (setq typescript-indent-level 2)
   (setq ycmd-server-command (list "python" (file-truename "~/git/ycmd/ycmd")))
@@ -603,6 +624,8 @@ before packages are loaded."
   (setq projectile-globally-ignored-directories
         '(".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox"
           ".svn" "build" "vendor" "cms/ext" "cms/Sencha" "node_modules"))
+  (setq projectile-globally-ignored-files
+        '("package-lock.json"))
   ;; (setq-default scroll-margin 4)
 
   ;; (setq-default spaceline-all-the-icons-separator-type 'arrow)
@@ -659,6 +682,7 @@ before packages are loaded."
   (add-hook 'js2-mode-hook #'my/symbols-setup)
   (add-hook 'go-mode-hook #'my/go-compile)
   ;; (add-hook 'web-mode-hook #'indent-guide-mode)
+  (add-hook 'yaml-mode-hook #'indent-guide-mode)
   (add-hook 'web-mode-hook #'my/column-enforce-mode)
 
   ;; (evil-define-key '(normal motion) global-map "gs" (lambda () (interactive) (avy-goto-char-timer) (my-xref/find-definitions)))
