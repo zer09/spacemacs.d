@@ -504,6 +504,7 @@ configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (setq-default git-magit-status-fullscreen t)
+  (setq-default which-key-idle-delay 0.1)
 
   ;; (add-hook 'prog-mode-hook 'turn-on-fci-mode)
   ;; (add-hook 'text-mode-hook 'turn-on-fci-mode)
