@@ -221,7 +221,8 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(sanityinc-tomorrow-bright
+   dotspacemacs-themes '(toxi
+                         sanityinc-tomorrow-bright
                          spacemacs-dark
                          zenburn
                          doom-solarized-light
@@ -508,6 +509,22 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 
   ;; (add-hook 'prog-mode-hook 'turn-on-fci-mode)
   ;; (add-hook 'text-mode-hook 'turn-on-fci-mode)
+  (setq doom-modeline-buffer-file-name-style 'file-name)
+  (set-face-attribute 'mode-line nil
+                      :background "#353644"
+                      :foreground "white"
+                      ;; :box '(:line-width 8 :color "#353644")
+                      :overline nil
+                      :underline nil)
+
+  (set-face-attribute 'mode-line-inactive nil
+                      :background "#565063"
+                      :foreground "white"
+                      ;; :box '(:line-width 8 :color "#565063")
+                      :overline nil
+                      :underline nil)
+
+
   )
 
 (defun dotspacemacs/user-load ()
