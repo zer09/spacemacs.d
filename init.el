@@ -547,6 +547,7 @@ before packages are loaded."
 
   ;; (setq-default fill-column 100)
   (setq-default evil-escape-key-sequence ",.")
+  (setq-default evil-kill-on-visual-paste nil)
 
   (setq projectile-globally-ignored-directories
         '(".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox"
