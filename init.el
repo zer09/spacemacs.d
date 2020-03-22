@@ -56,7 +56,8 @@ This function should only modify configuration layer settings."
              ranger-max-preview-size 1)
      (spell-checking :variables
                      spell-checking-enable-by-default nil)
-     (syntax-checking)
+     (syntax-checking :variables
+                      syntax-checking-enable-tooltips nil)
      (shell :variables
             shell-default-shell 'shell)
      (theming)
