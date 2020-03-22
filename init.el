@@ -511,21 +511,27 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   ;; (add-hook 'prog-mode-hook 'turn-on-fci-mode)
   ;; (add-hook 'text-mode-hook 'turn-on-fci-mode)
   (setq doom-modeline-buffer-file-name-style 'file-name)
+  ;; (set-face-attribute 'default nil
+  ;;                     :background "black"
+  ;;                     :foreground "#a4ffd8")
   (set-face-attribute 'mode-line nil
-                      :background "#353644"
+                      ;; :background "#353644"
+                      :background "black"
                       :foreground "white"
+                      :foreground "#50de77"
                       ;; :box '(:line-width 8 :color "#353644")
                       :overline nil
                       :underline nil)
 
   (set-face-attribute 'mode-line-inactive nil
-                      :background "#565063"
-                      :foreground "white"
+                      ;; :background "#565063"
+                      ;; :foreground "white"
+                      :background "black"
+                      ;; :foreground "white"
+                      :foreground "#7d7d7d"
                       ;; :box '(:line-width 8 :color "#565063")
                       :overline nil
                       :underline nil)
-
-
   )
 
 (defun dotspacemacs/user-load ()
