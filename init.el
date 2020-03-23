@@ -517,7 +517,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
   (set-face-attribute 'mode-line nil
                       ;; :background "#353644"
                       :background "black"
-                      :foreground "white"
+                      ;; :foreground "white"
                       :foreground "#50de77"
                       ;; :box '(:line-width 8 :color "#353644")
                       :overline nil
